@@ -1,0 +1,23 @@
+@import "../../node_modules/normalize.scss/normalize";
+
+//import global scss
+
+//Var
+@import "global/variable";
+//import mixins
+@import "global/mixins";
+//import sprite
+@import "global/sprite";
+//import common and base style
+@import "global/common";
+@import "global/base";
+//fonts
+@import "global/fonts";
+
+
+//import sections scss
+@import "sections/header";
+@import "sections/slide";
+@import "sections/form";
+@import "sections/Our Classes";
+@import "sections/gallery";
