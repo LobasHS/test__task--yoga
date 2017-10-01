@@ -1,0 +1,14 @@
+-var listLinkLeft=['About us','Reservation','Gallery'];
+-var listLinkRight=['Blog','Elements','Shop'];
+
+
+header.header
+    .container
+        .nav
+            .nav__left
+                +nav__link(listLinkLeft,'nav__link')
+            a.logo(href="#")
+                img.logo__picture(src="images/logo.png" title="logo")
+                h1.logo__name YOGA
+            .nav__right
+                +nav__link(listLinkRight,'nav__link')
