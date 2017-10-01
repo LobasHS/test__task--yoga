@@ -1,0 +1,11 @@
+.form__section
+    form.form
+        .form__title Trial Class
+        input.form__input(type='text' placeholder='Enter your name')
+        input.form__input(type='text' placeholder='Enter your phone')
+        select.form__input.form__select(size=1 required)
+            option(value='' disabled selected hidden) Chose your class
+            option.form__select--option(value='Class 1') Class 1
+            option.form__select--option(value='Class 2') Class 2
+            option.form__select--option(value='Class 3') Class 3
+        button.form__button(type='submit') Try it
