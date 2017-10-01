@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 html(lang="en")
   head
-    link(rel='stylesheet' href='')
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Yoga
+    link(rel='stylesheet' href='css/main.min.css')
+    link(rel='stylesheet' href='lib/magnific-popup.css')
   body
+    include global/mixins
+    include sections/header
+    include sections/slide
+    include sections/Our Classes
+    include sections/gallery
+
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+  script(src='lib/jquery.magnific-popup.js')
+  script(src='js/main.min.js')
