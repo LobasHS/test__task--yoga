@@ -1,0 +1,35 @@
+.gallery{
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  &__item{
+    position: relative;
+    margin: 0;
+    width: 480px;
+    height: 350px;
+    z-index: 1;
+
+  }
+
+  &__link{
+    &:after {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 480px;
+      height: 350px;
+      background: url("/images/block4/hover1.png");
+      z-index: 3;
+      transition: 0.8s;
+    }
+
+    &:hover:after{
+      opacity: 1;
+    }
+  }
+}
