@@ -1,0 +1,36 @@
+.slide{
+  margin-top: 100px;
+  background: url('/images/slider/sliderbg.png') center/cover no-repeat;
+  min-height: 600px;
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-left: 190px;
+  }
+
+  &__item{
+    top:100px;
+    position: relative;
+  }
+
+  &__description{
+    color:$color_slide_description;
+    padding-top: 55px;
+
+    &--title{
+      margin: 0;
+      text-transform: uppercase;
+      font-family: $font__title;
+      font-size: 3rem;
+      line-height: 1.45;
+    }
+    &--subtitle{
+      margin-top: 27px;
+      font-family: $font__subtitle;
+      font-size: 2.5rem;
+    }
+  }
+}
