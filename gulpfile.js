@@ -41,6 +41,7 @@ gulp.task('styles:compile', function () {
 
 gulp.task('js:compile',function () {
     return gulp.src([
+        'src/js/magnific-popup.js',
         'src/js/main.js'
     ])
         .pipe(sourcemaps.init())
@@ -79,8 +80,14 @@ gulp.task('copy:images',function () {
         .pipe(gulp.dest('buildProject/images'))
 });
 
+//copy js lib
+gulp.task('copy:lib',function () {
+    return gulp.src('./src/lib/*.*')
+        .pipe(gulp.dest('buildProject/lib'))
+});
+
 //copy
-gulp.task('copy',gulp.parallel('copy:fonts','copy:images'));
+gulp.task('copy',gulp.parallel('copy:fonts','copy:images','copy:lib'));
 
 //watchers
 gulp.task('watch',function () {
