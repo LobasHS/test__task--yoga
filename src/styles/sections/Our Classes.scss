@@ -1,0 +1,85 @@
+.ourclasses{
+  margin: 125px 0;
+
+  &__header{
+    text-align: center;
+  }
+  &__subheader{
+    color: $color_classes_subheader;
+    font-family: $font__title;
+    text-transform: uppercase;
+    font-size: 1.89rem;
+    margin: 0 0 15px 0;
+    line-height: 1;
+
+    &--text{
+      color: $color_classes_subheader_text;
+      font-family: $font__subtitle;
+      font-size: 2.55rem;
+      margin: 0 0 63px 0;
+    }
+  }
+
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  &__item{
+    position: relative;
+    width: 570px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: -1px -1px 10px 1px rgba(214,214,214,1);
+    margin: 0 30px 25px 0;
+
+    &:nth-child(2n){
+      margin: 0 0 25px 0;
+    }
+  }
+
+  &__image{
+    position: relative;
+    max-width: 270px;
+    max-height: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__picture{
+    display: block;
+  }
+
+  &__text{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin:50px 0 50px 30px;
+
+  }
+
+  &__title{
+    color: $color_classes_title;
+    font-family: $font__title;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  &__description{
+    color: $color_classes_description;
+    font-family: $font__text;
+    line-height: 22px;
+    font-size: 0.875rem;
+    margin:0 0 20px 0;
+  }
+
+  &__subscription{
+    color: $color_classes_subscription;
+    font-family: $font__text;
+    font-size: 0.85rem;
+  }
+}
