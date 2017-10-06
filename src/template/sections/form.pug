@@ -1,8 +1,8 @@
 .form__section
-    form.form
+    form.form(method="post" action="#")
         .form__title Trial Class
-        input.form__input(type='text' placeholder='Enter your name')
-        input.form__input(type='text' placeholder='Enter your phone')
+        input.form__input(type='text' placeholder='Enter your name' required pattern='^[a-z\\d\\.]{5,}$')
+        input.form__input(type='tel' placeholder='Enter your phone' required pattern='/^\+380\d{9}' minlength="13" maxlength="13")
         select.form__input.form__select(size=1 required)
             option(value='' disabled selected hidden) Chose your class
             option.form__select--option(value='Class 1') Class 1

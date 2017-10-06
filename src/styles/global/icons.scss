@@ -1,0 +1,87 @@
+//icons features sections
+.icon{
+  margin:auto ;
+}
+.icon__vector0{
+  @include sprite($-vector0)
+}
+.icon__vector1{
+  @include sprite($-vector1)
+}
+.icon__vector2{
+  @include sprite($-vector2)
+}
+.icon__vector3{
+  @include sprite($-vector3)
+}
+.icon__vector4{
+  @include sprite($-vector4)
+}
+.icon__vector5{
+  @include sprite($-vector5)
+}
+.icon__vector6{
+  @include sprite($-vector6)
+}
+.icon__vector7{
+  @include sprite($-vector7)
+}
+
+//icons footer
+//icons about
+
+//.about__icons{
+//  display: inline-block;
+//  height: 20px;
+//  width: 20px;
+//}
+
+.about__icons--pinterest{
+  @include sprite($pinterest)
+}
+
+.about__icons--facebook{
+  @include sprite($facebook)
+}
+
+.about__icons--twitter{
+  @include sprite($twitter)
+}
+
+.about__icons--google{
+  @include sprite($google-plus)
+}
+
+.about__icons--instagram{
+  @include sprite($instagram)
+}
+
+//icons contact
+.icon__contacts{
+  display: inline-block;
+}
+
+.icon__envelope{
+  @include sprite($envelope);
+  margin: 4px 15px 0 0;
+
+  @media (max-width: 425px) {
+    margin: 4px 8px 0 0;
+  }
+}
+.icon__phone-call{
+  @include sprite($phone-call);
+  margin: 9px 15px 0 0;
+}
+.icon__placeholder{
+  @include sprite($placeholder);
+  margin: 9px 23px 0 0;
+
+  @media (max-width: 425px) {
+    margin: 9px 15px 0 0;
+  }
+}
+.icon__planet-earth{
+  @include sprite($planet-earth);
+  margin-right: 15px;
+}

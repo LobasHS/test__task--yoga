@@ -1,4 +1,20 @@
 .container{
-  max-width: 1170px;
-  margin:auto;
+  position: relative;
+  width: 100%;
+  max-width: 1175px;
+  margin:0 auto;
+
+  @media (max-width: $laptop_m) {
+    max-width: 1024px;
+    margin:auto;
+  }
+  @media (max-width: 1024px) {
+    max-width: 950px;
+  }
+
+}
+.link{
+  position: absolute;
+  display: inline-block;
+  top:0;
 }
