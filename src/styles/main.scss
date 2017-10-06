@@ -3,11 +3,12 @@
 //import global scss
 
 //Var
-@import "global/variable";
 //import mixins
 @import "global/mixins";
+@import "global/variable";
 //import sprite
 @import "global/sprite";
+@import "global/icons";
 //import common and base style
 @import "global/common";
 @import "global/base";
@@ -21,3 +22,9 @@
 @import "sections/form";
 @import "sections/Our Classes";
 @import "sections/gallery";
+@import "sections/Aboutus";
+@import "sections/features";
+@import "sections/pricebloq";
+@import "sections/price";
+@import "sections/bloquotes";
+@import "sections/footer";
