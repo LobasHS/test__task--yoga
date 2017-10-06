@@ -41,6 +41,7 @@ gulp.task('styles:compile', function () {
 
 gulp.task('js:compile',function () {
     return gulp.src([
+        'src/js/price.js',
         'src/js/magnific-popup.js',
         'src/js/main.js'
     ])
@@ -53,7 +54,7 @@ gulp.task('js:compile',function () {
 
 //sprites
 gulp.task('sprite', function (cb) {
-    var spriteData = gulp.src('src/images/block6/*.png').pipe(spritesmith({
+    var spriteData = gulp.src('src/images/icons/**/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
         imgPath: '../images/sprite.png',
         cssName: 'sprite.scss'
