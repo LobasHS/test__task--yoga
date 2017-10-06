@@ -1,0 +1,22 @@
+.pricebloq{
+  max-height: 1150px;
+  background: url('../images/Layer 13.png') right bottom no-repeat;
+  position: relative;
+  padding:125px 0 200px 0;
+
+
+  @media (max-width: 1000px) {
+    max-height: 1350px;
+    padding:75px 0 100px 0;
+  }
+
+  @media (max-width: 650px) {
+    max-height: 1650px;
+    padding:50px 0 50px 0;
+  }
+
+
+  @media (max-width: 500px) {
+    padding:35px 0 35px 0;
+  }
+}

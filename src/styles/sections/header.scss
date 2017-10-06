@@ -1,19 +1,29 @@
 .header{
   height: 100px;
   width: 100%;
-  @include centerer-x();
   position: fixed;
-  z-index: 9999;
+  z-index: 5;
   top:0;
   background-color: #fff;
+  overflow: hidden;
+
+  @media (max-width: 800px) {
+    height: 50px;
+  }
 
   .nav{
-    height: 100px;
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: 80px;
+    margin-top: 1%;
+
+    @media (max-width: 800px) {
+      margin-top: 2%;
+      }
+
 
     &__left{
       display: inline-block;
@@ -36,8 +46,16 @@
       transition: 0.5s;
       cursor: pointer;
 
+      @media (max-width: 800px) {
+        margin-right: 40px;
+      }
+
       &:last-child{
         margin-right: 0;
+
+        @media (max-width: 800px) {
+          margin-right: 20px;
+        }
       }
 
       &:hover{
@@ -61,8 +79,12 @@
   }
 
   .logo{
+    display: inline-block;
     text-decoration: none;
-    margin:0 150px;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
 
     &__name{
       text-align: center;
