@@ -3,8 +3,18 @@ mixin nav__link(list,className)
             a(href='#'+link class=className)=link
 
 
-mixin gallery(scr_img,class__img,alt_img,class__item,class__link)
-        each src_link,alt_number in scr_img
-            li(class=class__item)
-                a(class=class__link href=src_link)
-                    img(class=class__img src=src_link alt=alt_img+' '+alt_number)
+mixin gallery(scr_img,class__gallery)
+        ul(class=class__gallery+'__list')
+            each src_link,alt_number in scr_img
+                li(class=class__gallery+'__item')
+                    a(class=class__gallery+'__link' href=src_link)
+                        img(class=class__gallery+'__img' src=src_link alt=class__gallery+'picture '+alt_number)
+
+
+mixin features_list(title,name_class,text)
+        ul(class=name_class+'__list')
+            each item,keylist in title
+                li(class=name_class+'__item')
+                    div.icon(class='icon__vector'+keylist)
+                    h1(class=name_class+'__title')= item
+                    p(class=name_class+'__text')= text
